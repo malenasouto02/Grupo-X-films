@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos interactivos | Grupo X Films</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="juegos">
+  <header>
+    <div class="nav-wrap">
+      <a class="logo" href="index.html">Grupo X Films</a>
+      <button class="menu-toggle" aria-label="Abrir menú">Menú</button>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-page="index">Inicio</a></li>
+<li><a href="nosotros.html" data-page="nosotros">Nosotros</a></li>
+<li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+<li><a href="producciones.html" data-page="producciones">Producciones</a></li>
+<li><a href="cartelera.html" data-page="cartelera">Cartelera</a></li>
+<li><a href="casting.html" data-page="casting">Casting</a></li>
+<li><a href="estudio.html" data-page="estudio">Estudio</a></li>
+<li><a href="blog.html" data-page="blog">Blog</a></li>
+<li><a href="eventos.html" data-page="eventos">Eventos</a></li>
+<li><a href="juegos.html" data-page="juegos">Juegos</a></li>
+<li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+<li><a href="faq.html" data-page="faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <button id="theme-btn" class="btn" type="button">Tema</button>
+    </div>
+  </header>
+  <main class="container">
+
+<section class="card">
+  <h1>Juegos para la comunidad cinéfila</h1>
+  <p>Mini-juegos hechos con JavaScript puro.</p>
+
+  <div class="game-box">
+    <h3>Adiviná el número (1 a 20)</h3>
+    <input id="guess-input" type="number" min="1" max="20" />
+    <button id="guess-btn" class="btn" type="button" style="margin-top:8px;">Probar</button>
+    <p id="guess-msg" class="msg"></p>
+  </div>
+
+  <div class="game-box">
+    <h3>Trivia: ¿cuántos fps usa el estándar clásico de cine?</h3>
+    <label><input type="radio" name="trivia" value="24" /> 24 fps</label><br>
+    <label><input type="radio" name="trivia" value="30" /> 30 fps</label><br>
+    <label><input type="radio" name="trivia" value="60" /> 60 fps</label><br>
+    <button id="trivia-btn" class="btn" type="button" style="margin-top:8px;">Responder</button>
+    <p id="trivia-msg" class="msg"></p>
+  </div>
+
+  <div class="game-box">
+    <h3>Piedra, papel o tijera</h3>
+    <button class="btn" data-rps="piedra" type="button">Piedra</button>
+    <button class="btn" data-rps="papel" type="button">Papel</button>
+    <button class="btn" data-rps="tijera" type="button">Tijera</button>
+    <p id="rps-msg" class="msg"></p>
+  </div>
+</section>
+  </main>
+  <footer>© 2026 Grupo X Films · Productora independiente</footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/games.js"></script>
+</body>
+</html>
